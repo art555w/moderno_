@@ -8,7 +8,11 @@ const imagemin = require('gulp-imagemin')
 const del = require('del')
 
 function styles() {
-  return src('app/scss/**/*.scss')
+  return src([
+    'node_modules/normalize.css/normalize.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'app/scss/**/*.scss',
+  ])
     .pipe(scss({ outputStyle: 'compressed' }))
     .pipe(concat('style.min.css'))
     .pipe(
