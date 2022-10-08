@@ -65,3 +65,61 @@
 			font-weight: 500;
 		}
 }
+
+.search {
+	background-image: url(../images/search-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 533px;
+	&__inner {
+		padding-top: 165px;
+		padding-bottom: 90px;
+		text-align: center;
+		color: #fff;
+	}
+
+	&__inner-title {
+		font-size: 48px;
+		font-weight: 700;
+		line-height: 72px;
+		margin-bottom: 10px;
+	}
+
+	&__inner-text {
+		font-size: 20px;
+		line-height: 30px;
+		font-weight: 500;
+		margin-bottom: 45px;
+	}
+
+	&__inner-form {
+		max-width: 670px;
+		margin: 0px auto;
+		position: relative;
+		input {
+			width: 100%;
+			box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
+			border-radius: 4px;
+			height: 56px;
+			padding-right: 60px;
+			padding-left: 25px;
+			&::placeholder {
+				color: #90a4ae;
+			}
+			&:focus {
+				outline: auto;
+			}
+		}
+		button {
+			position: absolute;
+			top: 19px;
+			right: 19px;
+			background-color: transparent;
+		}
+	}
+}
+
+
+ 
+
