@@ -27,7 +27,11 @@ function cleanDist() {
 }
 
 function scripts() {
-  return src(['node_modules/jquery/dist/jquery.js', 'app/js/app.js'])
+  return src([
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/mixitup/dist/mixitup.js',
+    'app/js/app.js',
+  ])
     .pipe(concat('app.min.js'))
     .pipe(uglify())
     .pipe(dest('app/js/'))
