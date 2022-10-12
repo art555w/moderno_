@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'global';
+@import 'fonts';
 
 //header start
 .header {
@@ -371,11 +372,177 @@
 
 //end  author ....................................
 
-// start  ...................................
-//end   ....................................
+// start tutorial  ...................................
 
-// start  ...................................
-//end   ....................................
+.tutorial {
+  padding: 65px 0px 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+  }
+
+  &__item-image {
+    min-height: 270px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__item-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: $bg;
+    padding: 40px 10px;
+    background-color: #f8f8f8;
+  }
+}
+
+//end tutorial  ....................................
+
+// start footer ...................................
+
+.footer {
+  background-color: $bg;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 110px 0 80px;
+  }
+
+  &__item {
+    max-width: 270px;
+    width: 100%;
+  }
+
+  &__item-titel {
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 30px;
+    margin-bottom: 25px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      height: 3px;
+      width: 50px;
+      background-color: $green;
+      left: 2px;
+      bottom: 0;
+    }
+  }
+
+  &__item-text {
+    color: #b7c3c8;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  &__item-info {
+    color: #fff;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 18px 0;
+    padding-left: 30px;
+    position: relative;
+    font-family: 'icomoon';
+    &::before {
+      content: '\f041';
+      position: absolute;
+      color: $green;
+      font-size: 18px;
+      left: 0;
+    }
+  }
+  a.footer__item-info {
+    &::before {
+      content: '\f095';
+    }
+  }
+
+  &__item-menu {
+    max-width: 220px;
+  }
+
+  &__item-list {
+    li {
+      margin-bottom: 20px;
+    }
+    a {
+      color: #b7c3c8;
+      font-size: 15px;
+      padding-left: 21px;
+      position: relative;
+      &::before {
+        content: '\f105';
+        font-size: 18px;
+        color: $green;
+        position: absolute;
+        left: 0;
+        font-family: 'icomoon';
+        top: 0;
+      }
+    }
+  }
+
+  &__item-social {
+    li {
+      display: inline-block;
+      margin-bottom: 45px;
+      margin-right: 7px;
+    }
+  }
+
+  &__item-form {
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    input {
+      color: #fff;
+      background-color: #2f3c43;
+      padding-right: 50px;
+      padding-left: 15px;
+      min-height: 38px;
+      margin-top: 20px;
+      width: 100%;
+      &::placeholder {
+        color: #697378;
+      }
+    }
+    button {
+      width: 43px;
+      height: 38px;
+      background-color: $green;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      &::before {
+        font-family: 'icomoon';
+        content: '\f124';
+        color: #fff;
+      }
+    }
+  }
+
+  &__copy {
+    border-top: 1px solid #424d53;
+    text-align: center;
+  }
+
+  &__copy-text {
+    padding: 30px 0;
+    color: #919699;
+    font-size: 15px;
+  }
+}
+
+//end footer  ....................................
 
 // start  ...................................
 //end   ....................................
