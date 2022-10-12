@@ -271,7 +271,65 @@
 
 //end   ....................................
 
+.advantage {
+  padding: 110px 0;
+  background-color: $bg;
+  &__title {
+    color: #fff;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    max-width: 330px;
+    text-align: center;
+    padding: 0px 15px;
+    &:hover {
+      .advantage__item-title {
+        color: $green;
+      }
+      .advantage__item-image {
+        background-color: $green;
+        g {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__item-image {
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    transition: all 0.4s;
+  }
+
+  &__item-title {
+    margin-top: 35px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 30px;
+    transition: all 0.4s;
+  }
+
+  &__item-text {
+    font-size: 15px;
+    line-height: 24px;
+    color: #b0bec5;
+  }
+}
+
 // start  ...................................
+
 //end   ....................................
 
 // start  ...................................
