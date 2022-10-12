@@ -10,7 +10,10 @@ const del = require('del')
 function styles() {
   return src([
     'node_modules/normalize.css/normalize.css',
+    'app/css/jquery.rateyo.css',
     'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/slick-carousel/slick/slick.css',
+    'node_modules/slick-carousel/slick/slick-theme.css',
     'app/scss/**/*.scss',
   ])
     .pipe(scss({ outputStyle: 'compressed' }))
@@ -30,6 +33,8 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/mixitup/dist/mixitup.js',
+    'app/js/jquery.rateyo.js',
+    'node_modules/slick-carousel/slick/slick.js',
     'app/js/app.js',
   ])
     .pipe(concat('app.min.js'))
