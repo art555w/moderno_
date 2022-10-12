@@ -271,6 +271,8 @@
 
 //end   ....................................
 
+//start advantage....................................
+
 .advantage {
   padding: 110px 0;
   background-color: $bg;
@@ -328,9 +330,46 @@
   }
 }
 
-// start  ...................................
+//end advantage....................................
 
-//end   ....................................
+// start author ...................................
+
+.author {
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $green;
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    padding: 0px 60px;
+  }
+
+  &__title {
+    font-size: 30px;
+    width: 260px;
+    margin-right: 10px;
+    color: #fff;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 36px;
+    color: $bg;
+    padding: 14px 43px;
+    background-color: #fff;
+  }
+}
+
+//end  author ....................................
 
 // start  ...................................
 //end   ....................................
