@@ -6,6 +6,22 @@ body {
 a {
   color: $link;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.main-page {
+  background-color: #f4f6f5;
+}
+
 .container {
   max-width: 1200px;
   margin: 0px auto;
@@ -23,4 +39,40 @@ a {
   margin-bottom: 40px;
   font-weight: 700;
   text-align: center;
+}
+
+.breadcrumbs {
+  &__inner {
+    padding: 50px 0 43px;
+  }
+
+  &__list {
+    a,
+    span {
+      color: #b0bec5;
+      font-size: 15px;
+    }
+
+    li {
+      display: inline-block;
+    }
+
+    li:last-child {
+      a,
+      span {
+        color: $bg;
+      }
+    }
+
+    li + li {
+      margin-left: 20px;
+      position: relative;
+      &::before {
+        content: '-';
+        color: $green;
+        position: absolute;
+        left: -14px;
+      }
+    }
+  }
 }
