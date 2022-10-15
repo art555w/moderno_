@@ -21,5 +21,17 @@ $(function () {
     to: 600,
     prefix: '$',
   })
+
+  $('.icon-list-ul').on('click', function () {
+    $('.product-page__content').addClass('list')
+    $('.icon-list-ul').addClass('active')
+    $('.icon-th-large').removeClass('active')
+  })
+  $('.icon-th-large').on('click', function () {
+    $('.product-page__content').removeClass('list')
+    $('.icon-th-large').addClass('active')
+    $('.icon-list-ul').removeClass('active')
+  })
+
   let mixer = mixitup('.products__inner')
 })

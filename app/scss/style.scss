@@ -82,6 +82,9 @@
     .search__inner {
       padding-top: 60px;
       padding-bottom: 65px;
+      &-text {
+        margin-bottom: 25px;
+      }
     }
   }
 
@@ -205,6 +208,7 @@
     font-size: 18px;
     margin-bottom: 18px;
     color: $bg;
+    font-weight: 500;
   }
 
   &__description-category {
@@ -584,8 +588,8 @@
         position: absolute;
         font-family: 'icomoon';
         font-size: 15px;
-        left: 58px;
-        top: 15px;
+        left: 49px;
+        top: 16px;
       }
     }
     .product__aside-content {
@@ -766,6 +770,9 @@
     button {
       color: #90a4ae;
       font-size: 16px;
+      &.active {
+        color: $green;
+      }
     }
   }
 
@@ -779,6 +786,7 @@
   &__item {
     max-width: 270px;
     background-color: #fff;
+    transition: all 0.5s;
   }
 }
 .product {
@@ -810,6 +818,17 @@
   &__info-star {
     padding-left: 5px;
   }
+  .product__description-text {
+    display: none;
+  }
+  .product__price {
+    span {
+      display: none;
+    }
+  }
+  .product__info-comment {
+    display: none;
+  }
 }
 
 .pagination {
@@ -834,6 +853,70 @@
       &.active {
         background-color: $red;
         color: #fff;
+      }
+    }
+  }
+}
+
+.product-page__content {
+  &.list {
+    .products__item {
+      max-width: 100%;
+      display: flex;
+    }
+    .product__item-image {
+      max-width: 240px;
+      width: 100%;
+    }
+    .product__item-wrapper {
+      width: 100%;
+    }
+    .product__price {
+      font-size: 30px;
+      span {
+        font-size: 13px;
+        color: #aeb4bb;
+        display: block;
+        margin-top: 35px;
+        font-weight: 400;
+      }
+    }
+    .product__description-text {
+      font-weight: 400;
+      font-size: 14px;
+      color: #70838d;
+      display: block;
+      margin-top: 20px;
+    }
+    .product__description-title {
+      margin-bottom: 14px;
+    }
+    .product__description {
+      max-width: 470px;
+    }
+    .product__content {
+      padding: 20px 30px;
+    }
+    .product__info-star {
+      margin-left: auto;
+    }
+    .product__info-comment {
+      display: block;
+      color: $bg;
+      font-size: 12px;
+      span,
+      a {
+        position: relative;
+        margin-left: 27px;
+        border-left: 2px solid #aeb4bb;
+        padding-left: 50px;
+        &::before {
+          position: absolute;
+          color: $green;
+          font-size: 16px;
+          top: -2px;
+          right: 38px;
+        }
       }
     }
   }
