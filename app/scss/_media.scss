@@ -1,0 +1,145 @@
+@media (max-width: 1100px) {
+   .footer__inner {
+      flex-wrap: wrap;
+      padding: 80px 0 80px;
+   }
+   .footer__item-about {
+      min-width: 100%;
+      margin-bottom: 35px;
+   }
+}
+
+@media (max-width: 1000px) {
+   header {
+      position: relative;
+   }
+   .header__text {
+      display: none;
+   }
+   .menu {
+      height: 0;
+   }
+   .menu__btn {
+      display: block;
+      position: absolute;
+      top: 30px;
+   }
+   .header__logo {
+      margin-left: 100px;
+   }
+   .header__btn-login {
+      margin-left: 0;
+   }
+   .menu__list {
+      position: absolute;
+      width: 100%;
+      top: 100px;
+      left: 0;
+      background-color: $bg;
+      z-index: 2;
+      display: none;
+
+      li {
+         display: block;
+         border-bottom: 1px solid #ccc;
+         padding: 15px 0;
+         & + li {
+            margin-left: 0;
+         }
+      }
+      a {
+         text-align: center;
+         display: block;
+         width: 100%;
+      }
+   }
+}
+
+@media (max-width: 920px) {
+   .menu__list {
+      display: none;
+   }
+}
+
+@media (max-width: 780px) {
+   .menu__btn {
+      top: 15px;
+   }
+   .footer__item-social {
+      min-width: 100%;
+      margin-top: 35px;
+   }
+   .footer__inner {
+      justify-content: start;
+   }
+   .footer__item-menu {
+      & + & {
+         margin-left: 40px;
+      }
+   }
+   .notification__box,
+   .message__box {
+      display: none;
+   }
+   .header__register {
+      transform: translate(200%);
+      position: absolute;
+      right: 10px;
+      transition: all 0.4s;
+      height: 60px;
+      background-color: #f4f6f5;
+
+      &.active {
+         transform: translate(-40px);
+      }
+   }
+
+   .menu__list {
+      top: 65px;
+   }
+   .circle__box .circle__menu,
+   .user__box .user__menu {
+      left: 0;
+      top: 49px;
+   }
+
+   .header__logo {
+      img {
+         height: 40px;
+      }
+   }
+
+   .user__box,
+   .circle__box {
+      height: 35px;
+      margin-top: 0;
+   }
+   .header__top-user {
+      display: block;
+   }
+   .user__info {
+      display: none;
+   }
+   .user .user__inner {
+      padding: 0;
+   }
+   .header__top {
+      height: 65px;
+   }
+}
+
+@media (max-width: 640px) {
+}
+
+@media (max-width: 550px) {
+   .header__circle {
+      margin: 4px 0px 0px;
+   }
+   .footer__item-menu {
+      min-width: 100%;
+      & + & {
+         margin-left: 0;
+         margin-top: 35px;
+      }
+   }
+}
